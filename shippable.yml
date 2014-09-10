@@ -5,8 +5,8 @@ jdk:
    - oraclejdk7
    - openjdk6
    - oraclejdk8
-before_script:
-   - Invalid_command_that_fails
+#before_script:
+#   - Invalid_command_that_fails
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
