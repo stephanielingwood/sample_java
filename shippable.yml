@@ -8,8 +8,7 @@ jdk:
 #before_script:
 #   - Invalid_command_that_fails
 
-addons:
-   firefox: "31.0"
+build_image: shippableimages/ubuntu1204_java:0.0.1
    
 after_success:
    - mvn clean cobertura:cobertura
