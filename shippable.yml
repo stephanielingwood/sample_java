@@ -8,9 +8,10 @@ jdk:
 #before_script:
 #   - Invalid_command_that_fails
 
-build_image: shippableimages/ubuntu1204_java:0.0.1
+#build_image: shippableimages/ubuntu1204_java:0.0.1
 before_install:
-   - apt-get install -y maven
+   - mvn --version
+   #- apt-get install -y maven
    
 after_success:
    - mvn clean cobertura:cobertura
