@@ -12,6 +12,7 @@ jdk:
 before_install:
    - env
    - which mvn
+   - ls -al /usr/bin/mvn
    - mvn --version
    #- apt-get install -y maven
    
