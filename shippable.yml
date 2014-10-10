@@ -10,6 +10,8 @@ jdk:
 
 #build_image: shippableimages/ubuntu1204_java:0.0.1
 before_install:
+   - env
+   - which mvn
    - mvn --version
    #- apt-get install -y maven
    
