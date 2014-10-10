@@ -2,8 +2,8 @@ language: java
 
 jdk:
    - openjdk7
-#   - oraclejdk7
-#   - openjdk6
+   - oraclejdk7
+   - openjdk6
 #   - oraclejdk8
 #before_script:
 #   - Invalid_command_that_fails
