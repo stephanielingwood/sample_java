@@ -11,7 +11,7 @@ jdk:
 #   - Invalid_command_that_fails
 
 #build_image: shippableimages/ubuntu1204_java:0.0.1
-before_install:
+before_script:
    - env
    - which mvn
    - ls -al /usr/bin/mvn
