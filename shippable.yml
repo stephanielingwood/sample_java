@@ -5,9 +5,7 @@ jdk:
    - oraclejdk7
    - openjdk6
    - oraclejdk8
-   
-   
-   
+
 #before_script:
 #   - Invalid_command_that_fails
 
