@@ -62,8 +62,8 @@
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>0.7.7.201606060606</version>
         <configuration>
-          <destFile>shippable/coverage-reports/jacoco-unit.exec</destFile>
-          <dataFile>shippable/coverage-reports/jacoco-unit.exec</dataFile>
+          <destFile>shippable/codecoverage/jacoco-unit.exec</destFile>
+          <dataFile>shippable/codecoverage/jacoco-unit.exec</dataFile>
         </configuration>
         <executions>
           <execution>
