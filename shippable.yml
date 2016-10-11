@@ -17,3 +17,5 @@ build:
    #   - mvn clean cobertura:cobertura
       - mvn test
       - tree
+      - cat /target/site/jacoco/index.html
+      - cat /target/site/jacoco/jacoco.csv
