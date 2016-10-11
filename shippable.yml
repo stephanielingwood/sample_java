@@ -2,21 +2,15 @@ language: java
 
 jdk:
    - openjdk7
-   - oraclejdk7
-   - openjdk6
-   - oraclejdk8
 
-#before_script:
-#   - Invalid_command_that_fails
-
-#build_image: shippableimages/ubuntu1204_java:0.0.1
-before_script:
-   - env
-   - which mvn
-   - ls -al /usr/bin/mvn
-   - mvn --version
-   #- apt-get install -y maven
-   
-after_success:
-   - mvn clean cobertura:cobertura
-   - mvn test
+build:
+   ci:
+      - env
+      - which mvn
+      - ls -al /usr/bin/mvn
+      - mvn --version
+      - apt-get install -y maven
+   on_success:
+      - mvn clean package
+      - mvn clean cobertura:cobertura
+      - mvn test
