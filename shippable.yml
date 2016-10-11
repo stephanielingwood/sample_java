@@ -5,6 +5,7 @@ jdk:
 
 build:
    ci:
+      - apt-get update
       - env
       - which mvn
       - ls -al /usr/bin/mvn
