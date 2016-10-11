@@ -6,6 +6,7 @@ jdk:
 build:
    ci:
       - apt-get update
+      - apt-get install tree
       - env
       - which mvn
       - ls -al /usr/bin/mvn
@@ -15,3 +16,4 @@ build:
       - mvn clean package
    #   - mvn clean cobertura:cobertura
       - mvn test
+      - tree
