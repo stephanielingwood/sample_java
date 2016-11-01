@@ -4,20 +4,14 @@ jdk:
    - openjdk7
 
 build:
-#   advancedReporting: true
+   advancedReporting: true
    ci:
       - apt-get update
       - apt-get install tree
-#      - env
-#      - which mvn
-#      - ls -al /usr/bin/mvn
       - mvn --version
       - mkdir -p shippable/codecoverage
-#      - apt-get install -y maven
-#      - mvn --version
    on_success:
       - mvn clean package
-   #   - mvn clean cobertura:cobertura
       - mvn test
       - tree shippable/
       - cp shippable/codecoverage/target/site/jacoco/jacoco.xml shippable/codecoverage/jacoco.xml
