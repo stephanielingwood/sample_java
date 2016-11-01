@@ -5,18 +5,18 @@ jdk:
 
 build:
    ci:
-      - apt-get update
-      - apt-get install tree
-      - env
-      - which mvn
-      - ls -al /usr/bin/mvn
+#      - apt-get update
+#      - apt-get install tree
+#      - env
+#      - which mvn
+#      - ls -al /usr/bin/mvn
       - mvn --version
-      - apt-get install -y maven
+#      - apt-get install -y maven
    on_success:
       - mvn clean package
    #   - mvn clean cobertura:cobertura
       - mvn test
-      - tree
+#      - tree
       - cat target/site/jacoco/index.html
       - cat target/site/jacoco/jacoco.csv
       - cat target/site/jacoco/jacoco.xml
