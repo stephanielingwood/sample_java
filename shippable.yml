@@ -13,7 +13,7 @@ build:
       - mvn --version
 #      - apt-get install -y maven
 #      - mvn --version
-on_success:
+   on_success:
       - mvn clean package
    #   - mvn clean cobertura:cobertura
       - mvn test
