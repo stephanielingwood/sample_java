@@ -3,9 +3,8 @@ language: java
 jdk:
    - openjdk7
 
-advancedReporting: true
-
 build:
+   advancedReporting: true
    ci:
       - apt-get update
       - apt-get install tree
