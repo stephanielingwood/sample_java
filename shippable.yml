@@ -20,4 +20,5 @@ build:
    #   - mvn clean cobertura:cobertura
       - mvn test
       - tree shippable/
+      - cp shippable/target/site/jacoco/jacoco.xml shippable/codecoverage/jacoco.xml
       - cat shippable/codecoverage/jacoco.xml
