@@ -81,7 +81,7 @@
               <!-- Sets the path to the file which contains the execution data. -->
               <dataFile>shippable/codecoverage/jacoco-unit.exec</dataFile>
               <!-- Sets the output directory for the code coverage report. -->
-              <outputDirectory>shippable/codecoverage</outputDirectory>
+              <outputDirectory>shippable/codecoverage/target/site/jacoco</outputDirectory>
             </configuration>
           </execution>
         </executions>
