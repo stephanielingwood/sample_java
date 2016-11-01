@@ -69,7 +69,6 @@
             </goals>
             <configuration>
               <destFile>shippable/codecoverage/jacoco-unit.exec</destFile>
-              <propertyName>surefireArgLine</propertyName>
             </configuration>
           </execution>
           <execution>
@@ -80,7 +79,7 @@
             </goals>
             <configuration>
               <!-- Sets the path to the file which contains the execution data. -->
-              <dataFile>shippable/codecoverage/jacoco-ut.exec</dataFile>
+              <dataFile>shippable/codecoverage/jacoco-unit.exec</dataFile>
               <!-- Sets the output directory for the code coverage report. -->
               <outputDirectory>shippable/codecoverage</outputDirectory>
             </configuration>
