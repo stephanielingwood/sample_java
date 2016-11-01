@@ -69,6 +69,7 @@
             </goals>
             <configuration>
               <destFile>shippable/codecoverage/jacoco-unit.exec</destFile>
+              <propertyName>surefireArgLine</propertyName>
             </configuration>
           </execution>
           <execution>
