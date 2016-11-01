@@ -19,6 +19,4 @@ build:
    #   - mvn clean cobertura:cobertura
       - mvn test
       - tree shippable/
-      - cat target/site/jacoco/index.html
-      - cat target/site/jacoco/jacoco.csv
-      - cat target/site/jacoco/jacoco.xml
+      - cat shippable/codecoverage/jacoco.xml
