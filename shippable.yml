@@ -5,14 +5,14 @@ jdk:
 
 build:
    ci:
-      - apt-get update
+#      - apt-get update
 #      - apt-get install tree
 #      - env
 #      - which mvn
 #      - ls -al /usr/bin/mvn
       - mvn --version
-      - apt-get install -y maven
-      - mvn --version
+#      - apt-get install -y maven
+#      - mvn --version
 on_success:
       - mvn clean package
    #   - mvn clean cobertura:cobertura
