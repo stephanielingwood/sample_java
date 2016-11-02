@@ -13,6 +13,6 @@ build:
    on_success:
       - mvn clean package
       - mvn test
-      - tree shippable/
+      - tree
       - cp shippable/codecoverage/target/site/jacoco/jacoco.xml shippable/codecoverage/jacoco.xml
       - cat shippable/codecoverage/jacoco.xml
