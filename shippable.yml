@@ -14,5 +14,5 @@ build:
       - mvn clean package
       - mvn test
       - tree
-      - cp shippable/codecoverage/target/site/jacoco/jacoco.xml shippable/codecoverage/jacoco.xml
-      - cat shippable/codecoverage/jacoco.xml
+      - cp target/site/jacoco/jacoco.xml shippable/codecoverage/target/site/jacoco/jacoco.xml
+      - cat shippable/codecoverage/target/site/jacoco/jacoco.xml
