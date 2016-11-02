@@ -4,7 +4,7 @@ jdk:
    - openjdk7
 
 build:
-   advancedReporting: false
+   advancedReporting: true
    ci:
       - apt-get update
       - apt-get install tree
@@ -15,5 +15,5 @@ build:
       - mvn test
       - tree
       - cp target/site/jacoco/jacoco.xml shippable/codecoverage/target/site/jacoco/jacoco.xml
-      - cp target/site/jacoco/jacoco.xml shippable/codecoverage/jacoco.xml
+#      - cp target/site/jacoco/jacoco.xml shippable/codecoverage/jacoco.xml
       - cat shippable/codecoverage/target/site/jacoco/jacoco.xml
