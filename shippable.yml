@@ -4,12 +4,12 @@ jdk:
    - openjdk7
 
 build:
-   advancedReporting: true
+   advancedReporting: false
    ci:
       - apt-get update
       - apt-get install tree
       - mvn --version
-      - mkdir -p shippable/codecoverage
+      - mkdir -p shippable/codecoverage/target/site/jacoco
    on_success:
       - mvn clean package
       - mvn test
