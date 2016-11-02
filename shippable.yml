@@ -4,7 +4,7 @@ jdk:
    - openjdk7
 
 build:
-   advancedReporting: true
+   advancedReporting: false
    ci:
       - apt-get update
       - apt-get install tree
